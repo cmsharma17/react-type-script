@@ -5,6 +5,9 @@ import { PersonList } from './component/PersonList';
 import { Status } from './component/Status';
 import { Heading } from './component/Heading';
 import { Oscar } from './component/Oscar';
+import { Button } from './component/Button';
+import { Input } from './component/Input';
+import { Container } from './component/Container';
 
 function App() {
   const personName = {
@@ -36,6 +39,14 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to Chandra Sharma</Heading>
       </Oscar>
+
+      <Button handleClick={(event, id) =>
+        console.log("Button Clicked", event,id)
+      }/>
+
+      <Input value='Sharma' handleChnage={event => console.log()}></Input>
+
+      <Container styles={{border: '1px solid black', padding: '1rem' }}></Container>
     </div>
   );
 }
