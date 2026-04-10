@@ -8,6 +8,7 @@ import { Oscar } from './component/Oscar';
 import { Button } from './component/Button';
 import { Input } from './component/Input';
 import { Container } from './component/Container';
+import { User } from './component/state/User';
 
 function App() {
   const personName = {
@@ -47,6 +48,8 @@ function App() {
       <Input value='Sharma' handleChnage={event => console.log()}></Input>
 
       <Container styles={{border: '1px solid black', padding: '1rem' }}></Container>
+
+      <User/>
     </div>
   );
 }
